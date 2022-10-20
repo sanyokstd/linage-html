@@ -1,0 +1,443 @@
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px; }
+
+.order-col {
+  padding: 32px 36px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 36px; }
+
+.order__main {
+  width: calc(58% - 36px);
+  margin-right: 36px; }
+
+.order__chat {
+  width: 42%; }
+
+.order__review {
+  width: calc(58% - 36px);
+  margin-right: 36px; }
+
+.order__img__big {
+  display: block;
+  padding-bottom: 52%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  transition: 0.3s all; }
+
+.order__img__mini {
+  display: block;
+  padding-bottom: 101%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  margin-bottom: 24px;
+  transition: 0.3s all; }
+
+.order__img__big:hover, .order__img__mini:hover {
+  opacity: 0.5; }
+
+.order__img {
+  display: flex; }
+
+.order__img__left {
+  width: 67%;
+  padding-right: 24px; }
+
+.order__img__right {
+  width: 33%; }
+
+.order__des__title {
+  color: #c3c3c3;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 14px; }
+
+.order__des .confirm__list {
+  margin-top: 25px; }
+
+.order__des p {
+  font-weight: bold;
+  font-size: 14px; }
+
+.choices i {
+  font-size: 20px; }
+
+.order__select {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px; }
+  .order__select .my-select {
+    flex: 1;
+    margin: 0;
+    margin-right: 26px;
+    border: 2px solid #f3f5f7;
+    border-radius: 20px;
+    position: relative; }
+  .order__select .choices {
+    z-index: 5; }
+  .order__select .my-select:after {
+    content: "";
+    top: 90%;
+    position: absolute;
+    display: block;
+    width: 80%;
+    left: 10%;
+    border-radius: 100%;
+    height: 1px;
+    box-shadow: 0 0 25px 2px #5f5f5f;
+    z-index: 1; }
+  .order__select .choices__inner {
+    border-radius: 20px; }
+  .order__select .choices__list--single {
+    height: 33px; }
+  .order__select .btn {
+    padding: 13px 20px; }
+
+.dark-theme .order-col {
+  background-color: #242123; }
+
+.dark-theme .order__select .my-select {
+  border: 2px solid #434042;
+  background-color: #363335; }
+
+.dark-theme .order__select .choices__inner {
+  background-color: #363335; }
+
+.chat {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative; }
+
+.chat__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #f3f5f7;
+  border-radius: 20px;
+  z-index: 2;
+  padding-left: 20px;
+  padding-right: 30px; }
+
+.chat__img {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  margin-right: 12px; }
+
+.chat__top__left {
+  display: flex;
+  align-items: center;
+  padding-right: 15px; }
+
+.chat__prof {
+  padding-top: 7px; }
+
+.chat__name {
+  font-weight: bold; }
+
+.chat__status {
+  color: #bec2c7;
+  font-size: 12px; }
+
+.chat__top__right {
+  padding-top: 10px;
+  display: flex; }
+
+.chat__top__right button {
+  border-radius: 5px;
+  background-color: #eceff1;
+  border: none;
+  width: 45px;
+  height: 45px;
+  color: #c7cfd4;
+  font-size: 23px;
+  margin-left: 10px;
+  transition: 0.3s all;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.chat__top__right button .icon-full-out {
+  display: none; }
+
+.chat__top__right button:hover {
+  color: #a4abaf; }
+
+.chat__body {
+  z-index: 1;
+  flex: 1;
+  border-right: 2px solid #f3f5f7;
+  border-left: 2px solid #f3f5f7;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  position: relative;
+  min-height: 170px; }
+  .chat__body .mess__list {
+    max-height: 460px;
+    overflow: auto;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .chat__body .mess__list__item {
+    background-color: #f3f5f7; }
+
+.chat__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #e3e5e7; }
+
+.chat__bot {
+  z-index: 2;
+  position: relative; }
+  .chat__bot textarea {
+    background-color: #fff;
+    border: 2px solid #f3f5f7;
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+    padding-right: 25px;
+    height: 55px;
+    resize: none;
+    margin: 0;
+    font-size: 12px; }
+  .chat__bot textarea::-webkit-scrollbar {
+    display: none; }
+  .chat__bot button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    color: #3ebf7b;
+    font-size: 20px;
+    padding: 10px; }
+  .chat__bot button:hover, .chat__bot button:focus {
+    color: #3ebf7b; }
+
+.chat.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #fff; }
+  .chat.fixed .chat__top__right button .icon-full-out {
+    display: block; }
+  .chat.fixed .chat__top__right button .icon-full {
+    display: none; }
+  .chat.fixed .chat__body {
+    margin-bottom: 0;
+    padding-bottom: 55px; }
+    .chat.fixed .chat__body .mess__list {
+      max-height: 100%; }
+  .chat.fixed .chat__top {
+    border-radius: 0; }
+  .chat.fixed .chat__bot {
+    position: absolute;
+    height: 55px;
+    left: 15px;
+    right: 15px;
+    bottom: 5px; }
+
+.review__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center; }
+
+.review__right {
+  color: #dde0e4;
+  font-size: 14px; }
+  .review__right .active {
+    color: #f2b40b; }
+
+.review__item {
+  background-color: #f3f5f7;
+  padding: 15px;
+  border-radius: 20px;
+  padding-right: 35px;
+  margin-bottom: 15px; }
+
+.review__left {
+  padding-right: 15px;
+  display: flex;
+  align-items: center; }
+
+.review__img {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  margin-right: 12px; }
+
+.review__name {
+  font-weight: bold; }
+  .review__name span {
+    color: #c1c4c7;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px; }
+
+.review__bot {
+  font-weight: 500; }
+
+.dark-theme .chat__top {
+  background-color: #363335; }
+
+.dark-theme .chat__top__right button {
+  background-color: #413d40;
+  color: #615c5f; }
+
+.dark-theme .chat__top__right button:hover {
+  color: #fff; }
+
+.dark-theme .chat__body {
+  border-color: #363335; }
+
+.dark-theme .chat__body .mess__list__item {
+  background-color: #363335; }
+
+.dark-theme .chat__bot textarea {
+  background-color: #242123;
+  border-color: #363335; }
+
+.dark-theme .chat__bot textarea:focus {
+  outline: none;
+  border-color: #fff; }
+
+.dark-theme .review__item {
+  background-color: #363335; }
+
+.dark-theme .review__right {
+  color: #4c484b; }
+
+.dark-theme .chat.fixed {
+  background-color: #242123; }
+
+.dark-theme textarea {
+  color: #fff; }
+
+@media (max-width: 1100px) {
+  .order__main {
+    width: 100%;
+    margin-right: 0; }
+  .order__chat {
+    width: 100%; }
+  .order__review {
+    margin-right: 0;
+    width: 100%; } }
+
+@media (max-width: 991px) {
+  .order {
+    margin-top: 0; } }
+
+@media (max-width: 575px) {
+  .order__img {
+    flex-direction: column; }
+  .order__img__left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px; }
+  .order__img__right {
+    width: 100%; }
+    .order__img__right .row {
+      margin-left: -6px;
+      margin-right: -6px; }
+    .order__img__right .row > * {
+      padding-left: 6px;
+      padding-right: 6px; }
+  .order__img__mini {
+    border-radius: 10px; }
+  .order__img__big {
+    border-radius: 10px; }
+  .order-col {
+    padding: 0;
+    background-color: transparent; }
+  .order__des p {
+    text-align: center;
+    font-size: 12px; }
+  .order__des__title {
+    font-size: 12px;
+    text-align: center; }
+  .order__select {
+    flex-direction: column;
+    align-items: center; }
+  .order__select .my-select {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 25px; }
+  .chat__img {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    margin-right: 10px; }
+  .chat__top {
+    padding: 15px; }
+  .chat__name {
+    font-size: 14px; }
+  .chat__status {
+    font-size: 12px; }
+  .chat__top__right button {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    margin-left: 5px; }
+  .chat__prof {
+    padding-top: 0; }
+  .chat__top__right {
+    padding-top: 0; }
+  .chat .mess__list__item__text {
+    font-size: 12px; }
+  .chat .mess__list__item__top {
+    margin-bottom: 5px; }
+  .chat .mess__list__item {
+    padding: 15px; }
+  .chat__body .mess__list {
+    max-height: 360px; }
+  .dark-theme .order-col {
+    background-color: transparent; }
+  .review__img {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    margin-right: 5px; }
+  .review__name {
+    font-size: 12px; }
+    .review__name span {
+      font-size: 10px; }
+  .review__item {
+    padding-right: 15px; }
+  .review__right {
+    font-size: 10px;
+    min-width: 67px; }
+  .review__top {
+    align-items: flex-start; }
+  .review__bot {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=order.css.map */
